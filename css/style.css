@@ -1,0 +1,248 @@
+body{
+   background-color: hsl(226, 43%, 10%);
+}
+
+.frame{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    /* width: 95%; */
+    border-radius: 18px;
+    background-color: hsl(235, 46%, 20%);
+    padding-bottom: 8px;
+}
+
+.frame .parent .child{
+    background-color: hsl(246, 80%, 60%);
+    padding-top: 30px;
+    padding-left: 25px;
+    border-radius: 18px;
+}
+
+.frame .parent .child img{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.frame .parent .child h6{
+    color: hsl(236, 100%, 87%);
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 13px;
+    
+}
+
+.frame .parent .child h2{
+    font-family: 'Rubik';
+    /* font-size: 2.5rem; */
+    color: #fff;
+    font-weight: 300;
+    padding-bottom: 55px;
+    margin-bottom: 15px;
+}
+
+.frame .parent ul li{
+    list-style: none;
+    padding-bottom: 8px;
+}
+
+.active{
+    color: #fff !important;
+}
+
+.frame .parent ul li a{
+    text-decoration: none;
+    color: hsl(236, 100%, 87%);
+    transition: 0.5s;
+}
+
+.frame .parent ul li a:hover{
+    color: #fff;
+}
+
+.work_color{
+    background-color: hsl(15, 100%, 70%);
+}
+
+.work{
+    background-color: hsl(15, 100%, 70%);
+    background-image: url("../images/icon-work.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 70px;
+}
+
+.play_color{
+    background-color: hsl(195, 74%, 62%);
+}
+.play{
+    background-image: url("../images/icon-play.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 70px;
+}
+
+.study_color{
+    background-color: hsl(348, 100%, 68%);
+}
+.study{
+    background-image: url("../images/icon-study.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 70px;
+}
+
+.exercise_color{
+    background-color: hsl(145, 58%, 55%);
+}
+.exercise{
+    background-image: url("../images/icon-exercise.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 70px;
+}
+
+.social_color{
+    background-color: hsl(264, 64%, 52%);
+}
+.social{
+    background-image: url("../images/icon-social.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 70px;
+}
+
+.self-care_color{
+    background-color: hsl(43, 84%, 65%);
+}
+.self-care{
+    background-image: url("../images/icon-self-care.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 70px;
+}
+
+.frame .back{
+    color: #fff;
+    border-radius: 18px !important;
+}
+
+.frame .back .top{
+    height: 40px;
+    border-radius: 18px 18px 0px 0px;
+}
+
+.frame .back .bottom{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 18px;
+    position: relative;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.frame .back .bottom:hover{
+    cursor: pointer;
+    background-color: hsl(235, 45%, 61%);
+}
+
+.frame .back .bottom h6{
+    display: inline;
+    font-family: 'Rubik';
+}
+
+.frame .back .bottom .number{
+    font-family: 'Rubik';
+    font-size: 2.5rem;
+    padding-top: 0.8rem;
+}
+
+.frame .back .bottom .text{
+    font-family: 'Rubik';
+    font-size: 0.8rem;
+    color: hsl(236, 100%, 87%);
+    padding-top: 0rem;
+    line-height: 0px;
+}
+
+.frame .back .bottom img{
+    position: absolute;
+    right: 9px;
+    top: 25px;
+}
+
+.frame .back .bottom img:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+
+@media(max-width:767px){
+    .frame{
+        display: inline !important;
+    }
+
+    .child{
+        display: flex;
+    }
+
+    .frame .parent .child img{
+        width: 80px;
+        height: 100px;
+    }
+
+    .first_topic{
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .frame .parent ul {
+        display: flex;
+    }
+
+    .frame .parent ul li{
+        margin: auto;
+        margin-top: 1.5em;
+        margin-left: 0rem;
+    }
+
+    .frame .parent ul li a{
+        font-size: 1.3rem;
+    }
+
+    .child h2{
+        /* margin-left: 1rem; */
+        font-size: 1.5rem;
+    }
+
+    .frame .back .bottom h6{
+        display: block;
+    }
+
+    .para{
+        display: flex;
+    }
+
+    .frame .back .bottom .text{
+        margin-left: auto;
+        margin-top: 2.6rem;
+    }
+}
+
+@media(min-width:767px){
+    .parent{
+        width: 95%;
+    }
+}
